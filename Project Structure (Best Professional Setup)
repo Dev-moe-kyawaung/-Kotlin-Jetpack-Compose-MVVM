@@ -1,0 +1,63 @@
+/portfolio
+├── website/                          # Portfolio Website (Web)
+│   ├── index.html                    # Home page
+│   ├── about.html                    # About page
+│   ├── projects.html                 # Projects page
+│   ├── certificates.html             # Certificates page
+│   ├── github-social.html            # GitHub & Social links
+│   ├── contact.html                  # Contact form
+│   ├── verify-email.html             # Verification page
+│   ├── css/
+│   │   └── style.css                 # Cyberpunk Neon CSS
+│   └── js/
+│       └── main.js                   # JavaScript interactions
+│
+├── android-app/                      # Portfolio Android App (Kotlin)
+│   ├── app/
+│   │   ├── src/main/java/com/moekyawaung/portfolio/
+│   │   │   ├── MainActivity.kt
+│   │   │   ├── ui/
+│   │   │   │   ├── screens/
+│   │   │   │   │   ├── HomeScreen.kt           # Compose Home
+│   │   │   │   │   ├── AboutScreen.kt          # Compose About
+│   │   │   │   │   ├── ProjectsScreen.kt       # Compose Projects
+│   │   │   │   │   └── ContactScreen.kt        # Compose Contact
+│   │   │   │   ├── components/
+│   │   │   │   │   ├── HeroSection.kt
+│   │   │   │   │   ├── StatsCounter.kt
+│   │   │   │   │   ├── SkillProgressBar.kt
+│   │   │   │   │   └── ProjectCard.kt
+│   │   │   │   └── theme/
+│   │   │   │       ├── Color.kt                # Neon Cyan/Pink/Yellow
+│   │   │   │       ├── Theme.kt                # Dark/Light mode
+│   │   │   │       └── Typography.kt
+│   │   │   ├── data/
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── Project.kt
+│   │   │   │   │   ├── Skill.kt
+│   │   │   │   │   └── Certificate.kt
+│   │   │   │   ├── repository/
+│   │   │   │   │   └── PortfolioRepository.kt  # MVVM Repository
+│   │   │   │   └── local/
+│   │   │   │       └── PortfolioDatabase.kt    # Room Database
+│   │   │   ├── viewModel/
+│   │   │   │   ├── HomeViewModel.kt            # MVVM ViewModel
+│   │   │   │   ├── ProjectsViewModel.kt
+│   │   │   │   └── ContactViewModel.kt
+│   │   │   └── util/
+│   │   │       ├── Constants.kt
+│   │   │       └── Extensions.kt
+│   │   ├── res/
+│   │   │   ├── drawable/
+│   │   │   ├── fonts/
+│   │   │   └── values/
+│   │   │       ├── colors.xml                  # Neon colors
+│   │   │       └── strings.xml
+│   │   └── build.gradle.kts
+│   ├── gradle/
+│   └── build.gradle.kts
+│
+└── backend/                          # Contact Form Backend (Optional)
+    ├── server.js                     # Node.js + Express
+    ├── .env                          # Environment variables
+    └── package.json
